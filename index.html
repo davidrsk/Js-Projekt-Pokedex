@@ -11,17 +11,19 @@
 <body>
     <p>Pokedex</p>
 
-    <!--Bilden nedan är en 'absolut adress' till 04charmander.gif
-    Den börjar i "/" som är web-root i en adress-->
-    <img src="/img/04charmander.gif" alt="">
-
-    <!--En 'relativ adress' saknar första "/" men har en påbyggnad 
-    utifrån där vi är
-
-    I pathen nedan så är vi inuti 'index.html'
+    <!--I pathen nedan så är vi inuti 'index.html'
     Testar vi lokalt är det: http://127.0.0.1:5502/index.html
     men utifrån gitHub är det: https://davidrsk.github.io/Js-Projekt-Pokedex/ -->
     <img src="img/04charmander.gif" alt="">
+
+    <div id="">
+        <label for="input-number">Pokédex entry</label>
+        <input id="pokemon-index" type="number" placeholder="0">
+    </div>
+
+    <div id="outputbox">
+
+    </div>
 </body>
 
 <footer>
