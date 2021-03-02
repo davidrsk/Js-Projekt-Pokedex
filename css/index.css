@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(250, 107, 107);
+}
+
+h1 {
+  color: rgb(224, 196, 37);
+  font-size: 65px;
+  border-bottom: solid 4px black;
+
+  text-shadow:/* first layer at 1px */ -1px -1px 0px blue, 0px -1px 0px blue,
+    1px -1px 0px blue, -1px 0px 0px blue, 1px 0px 0px blue, -1px 1px 0px blue,
+    0px 1px 0px blue, 1px 1px 0px blue,
+    /* second layer at 2px */ -2px -2px 0px blue, -1px -2px 0px blue,
+    0px -2px 0px blue, 1px -2px 0px blue, 2px -2px 0px blue, 2px -1px 0px blue,
+    2px 0px 0px blue, 2px 1px 0px blue, 2px 2px 0px blue, 1px 2px 0px blue,
+    0px 2px 0px blue, -1px 2px 0px blue, -2px 2px 0px blue, -2px 1px 0px blue,
+    -2px 0px 0px blue, -2px -1px 0px blue;
+}
+
+h3 {
+  font-size: 30px;
+  color: rgb(224, 196, 37);
+  text-shadow:/* first layer at 1px */ -1px -1px 0px blue, 0px -1px 0px blue,
+    1px -1px 0px blue, -1px 0px 0px blue, 1px 0px 0px blue, -1px 1px 0px blue,
+    0px 1px 0px blue, 1px 1px 0px blue,
+    /* second layer at 2px */ -2px -2px 0px blue, -1px -2px 0px blue,
+    0px -2px 0px blue, 1px -2px 0px blue, 2px -2px 0px blue, 2px -1px 0px blue,
+    2px 0px 0px blue, 2px 1px 0px blue, 2px 2px 0px blue, 1px 2px 0px blue,
+    0px 2px 0px blue, -1px 2px 0px blue, -2px 2px 0px blue, -2px 1px 0px blue,
+    -2px 0px 0px blue, -2px -1px 0px blue;
+}
+
+a {
+  color: rgb(155, 211, 117);
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(40, 94, 50);
+  height: 80px;
+}
