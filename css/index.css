@@ -75,7 +75,7 @@ h3 {
   height: 85px;
 }
 
-aside {
+#aside-border {
   float: right;
 
   border: dashed 4px black;
@@ -84,6 +84,47 @@ aside {
 
   min-width: 20%;
   height: 100%;
+
+  display: grid;
+  gap: 40px 0px;
+}
+
+#aside-border img {
+  height: 80px;
+}
+
+.aside-title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.team1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.team2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.team3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.team4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 a {
