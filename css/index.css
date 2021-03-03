@@ -4,13 +4,15 @@
 }
 
 header {
-  background-color: rgb(250, 107, 107);
+  background-color: rgb(233, 79, 79);
+  border-bottom: solid 4px black;
+
+  padding: 40px 10px 40px 10px;
 }
 
 h1 {
   color: rgb(224, 196, 37);
   font-size: 65px;
-  border-bottom: solid 4px black;
 
   text-shadow:/* first layer at 1px */ -1px -1px 0px blue, 0px -1px 0px blue,
     1px -1px 0px blue, -1px 0px 0px blue, 1px 0px 0px blue, -1px 1px 0px blue,
@@ -23,8 +25,10 @@ h1 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(224, 196, 37);
+  margin: 15px 20px 30px 20px;
+
   text-shadow:/* first layer at 1px */ -1px -1px 0px blue, 0px -1px 0px blue,
     1px -1px 0px blue, -1px 0px 0px blue, 1px 0px 0px blue, -1px 1px 0px blue,
     0px 1px 0px blue, 1px 1px 0px blue,
@@ -35,12 +39,73 @@ h3 {
     -2px 0px 0px blue, -2px -1px 0px blue;
 }
 
+#container {
+  padding: 0px 20px 0px 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+}
+
+#box-1 {
+  min-height: 60%;
+}
+
+#input-box {
+  border: dashed 4px black;
+  padding: 5px 5px 5x 5px;
+  margin: 30px 20px 30px 20px;
+}
+
+#output-box {
+  border: solid 4px black;
+  margin: 10px 20px 10px 20px;
+}
+
+#container img {
+  height: 80px;
+}
+
+#container img:hover {
+  cursor: pointer;
+  height: 85px;
+}
+
+aside {
+  float: right;
+
+  border: dashed 4px black;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
+
+  min-width: 20%;
+  height: 100%;
+}
+
 a {
   color: rgb(155, 211, 117);
   text-decoration: none;
 }
 
+a:hover {
+  color: rgb(191, 221, 171);
+}
+
 footer {
-  background-color: rgb(40, 94, 50);
-  height: 80px;
+  font-size: 20px;
+  background-color: rgb(25, 68, 33);
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
