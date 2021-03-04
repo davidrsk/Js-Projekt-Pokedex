@@ -6,6 +6,7 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+/*Rör headern ---------------------------------------------------------------------------------*/
 header {
   background-color: rgb(233, 79, 79);
   border-bottom: solid 4px black;
@@ -40,6 +41,63 @@ h3 {
     0px 2px 0px blue, -1px 2px 0px blue, -2px 2px 0px blue, -2px 1px 0px blue,
     -2px 0px 0px blue, -2px -1px 0px blue;
 }
+
+/*Mitten-partiet---------------------------------------------------------------------------------*/
+
+/* TEAM aside----------------------------*/
+#aside-border {
+  float: right;
+
+  border: dashed 4px black;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
+
+  min-width: 20%;
+  height: 100%;
+
+  display: grid;
+  gap: 40px 0px;
+}
+
+#aside-border img {
+  height: 80px;
+}
+
+.aside-title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.team1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.team2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.team3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.team4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* choose your pokémon-----------------*/
 
 h4 {
   margin: 15px 20px 30px 20px;
@@ -105,57 +163,7 @@ h4 {
   height: 85px;
 }
 
-#aside-border {
-  float: right;
-
-  border: dashed 4px black;
-  margin: 10px 20px 10px 20px;
-  padding: 10px 20px 10px 20px;
-
-  min-width: 20%;
-  height: 100%;
-
-  display: grid;
-  gap: 40px 0px;
-}
-
-#aside-border img {
-  height: 80px;
-}
-
-.aside-title {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.team1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.team2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.team3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.team4 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
+/* Footer ---------------------------------------------------------------------------------*/
 
 a {
   color: rgb(155, 211, 117);

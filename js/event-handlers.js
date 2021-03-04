@@ -33,6 +33,12 @@ inputBox6.oninput = function(){
     updateSprite6(inputBox6.value);
 };
 
+// visar pokémon info vid knapp-tryck
+info1.onclick = function(){
+    updateInfo(inputBox.value);
+};
+// lägger till klickad pokémon i TEAM
+
 sprite1.onclick = function(){
     team1 = sprite1.innerHTML;
 }
