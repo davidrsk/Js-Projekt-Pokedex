@@ -11,27 +11,30 @@
 <body>
     <header>
         <h1>Pokédex</h1>
+        <h3>Pick any Pokémon between Pokémon-index 1-649</h3>
     </header>
 
     <aside id="aside-border">
         <div class="aside-title"><h4>TEAM</h4></div>
-        <div class="team1"><img src="/img/04charmander.gif" alt=""> </div>
-        <div class="team2"><img src="/img/04charmander.gif" alt=""> </div>
-        <div class="team3"><img src="/img/04charmander.gif" alt=""> </div>
-        <div class="team4"><img src="/img/04charmander.gif" alt=""> </div>
-        <div class="team5"><img src="/img/04charmander.gif" alt=""> </div>
-        <div class="team6"><img src="/img/04charmander.gif" alt=""> </div>
+        <div class="team1"><img src="" alt=""> </div>
+        <div class="team2"><img src="" alt=""> </div>
+        <div class="team3"><img src="" alt=""> </div>
+        <div class="team4"><img src="" alt=""> </div>
+        <div class="team5"><img src="" alt=""> </div>
+        <div class="team6"><img src="" alt=""> </div>
     </aside>
 
     <div id="container">
 
         <div id="box-1">
-            <h3>Choose your 1st Pokémon!</h3>
+            <h4>Choose your 1st Pokémon!</h4>
     
             <div id="input-box">
-                <label for="input-number"></label>
-                <input id="pokemon-index" type="number" placeholder="0">
+                <label for="input-number"></label> 
+                <input id="pokemon-index" type="number" placeholder="0" max="649" min="0"> 
+                <button id="info1">info</button>
             </div>
+            
            
             <img id="select-sprite-1" src="" alt=""> 
         
@@ -41,11 +44,12 @@
         </div>
     
         <div id="box-2">
-            <h3>Choose your 2nd Pokémon!</h3>
+            <h4>Choose your 2nd Pokémon!</h4>
 
             <div id="input-box2">
                 <label for="input-number"></label>
-                <input id="pokemon-index2" type="number" placeholder="0">
+                <input id="pokemon-index2" type="number" placeholder="0" max="649" min="0">
+                <button id="info2">info</button>
             </div>
 
             <img id="select-sprite-2" src="" alt="">
@@ -53,11 +57,12 @@
         </div>
     
         <div id="box-3">
-            <h3>Choose your 3rd Pokémon!</h3>
+            <h4>Choose your 3rd Pokémon!</h4>
 
             <div id="input-box3">
                 <label for="input-number"></label>
-                <input id="pokemon-index3" type="number" placeholder="0">
+                <input id="pokemon-index3" type="number" placeholder="0" max="649" min="0">
+                <button id="info3">info</button>
             </div>
 
             <img id="select-sprite-3" src="" alt="">
@@ -65,11 +70,12 @@
         </div>
 
         <div id="box-4">
-            <h3>Choose your 4th Pokémon!</h3>
+            <h4>Choose your 4th Pokémon!</h4>
 
             <div id="input-box4">
                 <label for="input-number"></label>
-                <input id="pokemon-index4" type="number" placeholder="0">
+                <input id="pokemon-index4" type="number" placeholder="0" max="649" min="0">
+                <button id="info4">info</button>
             </div>
 
             <img id="select-sprite-4" src="" alt="">
@@ -77,11 +83,12 @@
         </div>
     
         <div id="box-5">
-            <h3>Choose your 5th Pokémon!</h3>
+            <h4>Choose your 5th Pokémon!</h4>
 
             <div id="input-box5">
                 <label for="input-number"></label>
-                <input id="pokemon-index5" type="number" placeholder="0">
+                <input id="pokemon-index5" type="number" placeholder="0" max="649" min="0">
+                <button id="info5">info</button>
             </div>
 
             <img id="select-sprite-5" src="" alt="">
@@ -89,11 +96,12 @@
         </div>
 
         <div id="box-6">
-            <h3>Choose your 6th Pokémon!</h3>
+            <h4>Choose your 6th Pokémon!</h4>
 
             <div id="input-box5">
                 <label for="input-number"></label>
-                <input id="pokemon-index6" type="number" placeholder="0">
+                <input id="pokemon-index6" type="number" placeholder="0" max="649" min="0">
+                <button id="info6">info</button>
             </div>
 
             <img id="select-sprite-6" src="" alt="">
@@ -102,10 +110,12 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/funktioner.js"></script>
+    <script src="js/event-handlers.js"></script>
 </body>
 
 <footer>
-    <a href="https://github.com/davidrsk/Js-Projekt-Pokedex">To GitHub</a>
+    <a href="https://github.com/davidrsk/Js-Projekt-Pokedex">To GitHub Pages</a>
     <a href="https://pokeapi.co/" target="_blank">API source</a>
     <a href="https://www.pokemon.com/se/" target="_blank">Official Pokémon Website</a>
 </footer>

@@ -1,13 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 header {
   background-color: rgb(233, 79, 79);
   border-bottom: solid 4px black;
 
-  padding: 40px 10px 40px 10px;
+  padding: 20px 10px 30px 10px;
 }
 
 h1 {
@@ -25,9 +28,8 @@ h1 {
 }
 
 h3 {
+  color: rgb(233, 206, 56);
   font-size: 20px;
-  color: rgb(224, 196, 37);
-  margin: 15px 20px 30px 20px;
 
   text-shadow:/* first layer at 1px */ -1px -1px 0px blue, 0px -1px 0px blue,
     1px -1px 0px blue, -1px 0px 0px blue, 1px 0px 0px blue, -1px 1px 0px blue,
@@ -37,6 +39,10 @@ h3 {
     2px 0px 0px blue, 2px 1px 0px blue, 2px 2px 0px blue, 1px 2px 0px blue,
     0px 2px 0px blue, -1px 2px 0px blue, -2px 2px 0px blue, -2px 1px 0px blue,
     -2px 0px 0px blue, -2px -1px 0px blue;
+}
+
+h4 {
+  margin: 15px 20px 30px 20px;
 }
 
 #container {
@@ -56,7 +62,31 @@ h3 {
 }
 
 #input-box {
-  border: dashed 4px black;
+  padding: 5px 5px 5x 5px;
+  margin: 30px 20px 30px 20px;
+}
+
+#input-box2 {
+  padding: 5px 5px 5x 5px;
+  margin: 30px 20px 30px 20px;
+}
+
+#input-box3 {
+  padding: 5px 5px 5x 5px;
+  margin: 30px 20px 30px 20px;
+}
+
+#input-box4 {
+  padding: 5px 5px 5x 5px;
+  margin: 30px 20px 30px 20px;
+}
+
+#input-box5 {
+  padding: 5px 5px 5x 5px;
+  margin: 30px 20px 30px 20px;
+}
+
+#input-box6 {
   padding: 5px 5px 5x 5px;
   margin: 30px 20px 30px 20px;
 }
