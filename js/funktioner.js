@@ -7,10 +7,11 @@
 // 
 
 //-----------------------------------------------------------------------------------------
+
 // alla 6 funktioner för att hämta och lagra sprite-gif i img src:
 
 //1st
-function updateSprite1(idIndex){
+function updateSprite(idIndex, pokeIndex){
     const url = new URL ("https://pokeapi.co/api/v2/pokemon/" + idIndex);
 
     const serverResponse = fetch(url); //hämtar url, stoppas i serverResponse
@@ -20,69 +21,9 @@ function updateSprite1(idIndex){
   // när vi hämtat url, lagra i 'response' som tolkas om till json-objekt
   // när vi har json-objekt, lagra i 'data'
 
-    sprite1.src = data.sprites.versions["generation-v"]["black-white"].animated.front_default;
+    sprites[pokeIndex].src = data.sprites.versions["generation-v"]["black-white"].animated.front_default;
     console.log(data)});
 }; // i <img id="sprite1"> och dess källa lägger vi url + hela pathen till sprite-gifen
-
-//2nd
-function updateSprite2(idIndex){
-    const url = new URL ("https://pokeapi.co/api/v2/pokemon/" + idIndex);
-
-    const serverResponse = fetch(url);
-
- serverResponse.then(response=>response.json())
- .then(data=>{ 
-    sprite2.src = data.sprites.versions["generation-v"]["black-white"].animated.front_default;
-    console.log(data)});
-};
-
-//3rd
-function updateSprite3(idIndex){
-    const url = new URL ("https://pokeapi.co/api/v2/pokemon/" + idIndex);
-
-    const serverResponse = fetch(url);
-
- serverResponse.then(response=>response.json())
- .then(data=>{ 
-    sprite3.src = data.sprites.versions["generation-v"]["black-white"].animated.front_default;
-    console.log(data)});
-};
-
-//4th
-function updateSprite4(idIndex){
-    const url = new URL ("https://pokeapi.co/api/v2/pokemon/" + idIndex);
-
-    const serverResponse = fetch(url);
-
- serverResponse.then(response=>response.json())
- .then(data=>{ 
-    sprite4.src = data.sprites.versions["generation-v"]["black-white"].animated.front_default;
-    console.log(data)});
-};
-
-//5th
-function updateSprite5(idIndex){
-    const url = new URL ("https://pokeapi.co/api/v2/pokemon/" + idIndex);
-
-    const serverResponse = fetch(url);
-
- serverResponse.then(response=>response.json())
- .then(data=>{ 
-    sprite5.src = data.sprites.versions["generation-v"]["black-white"].animated.front_default;
-    console.log(data)});
-};
-
-//6th
-function updateSprite6(idIndex){
-    const url = new URL ("https://pokeapi.co/api/v2/pokemon/" + idIndex);
-
-    const serverResponse = fetch(url);
-
- serverResponse.then(response=>response.json())
- .then(data=>{ 
-    sprite6.src = data.sprites.versions["generation-v"]["black-white"].animated.front_default;
-    console.log(data)});
-};
 
 
 // funktion för att uppdatera info om varje pokémon
@@ -95,7 +36,7 @@ function updateInfo(idIndex){
 
  serverResponse.then(response=>response.json())
  .then(data=>{ 
-     outputBox1.innerText = "Name: " + data.name 
+     infos[pokeIndex].innerText = "Name: " + data.name 
      + "\n" + "Type: " + data.types[0].type.name //(+ "/" + data.types[1].type.name) fel om pkmn bara har 1 type
      + "\n" + "Height: " + data.height + " dm"
      + "\n" + "Weight: " + data.weight + " lbs"});

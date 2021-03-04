@@ -14,16 +14,43 @@ let inputBox4 = document.getElementById("pokemon-index4");
 let inputBox5 = document.getElementById("pokemon-index5");
 let inputBox6 = document.getElementById("pokemon-index6");
 
-// alla 6 img-sprites 
-let sprite1 = document.getElementById("select-sprite-1");
-let sprite2 = document.getElementById("select-sprite-2");
-let sprite3 = document.getElementById("select-sprite-3");
-let sprite4 = document.getElementById("select-sprite-4");
-let sprite5 = document.getElementById("select-sprite-5");
-let sprite6 = document.getElementById("select-sprite-6");
+inputBox.pokeIndex = 0;
+inputBox2.pokeIndex = 1;
+inputBox3.pokeIndex = 2;
+inputBox4.pokeIndex = 3;
+inputBox5.pokeIndex = 4;
+inputBox6.pokeIndex = 5;
 
-//alla 6 TEAM slots
-let team1 = document.getElementsByClassName("team1");
+
+let sprites = document.getElementsByClassName("sprite"); //alla sprites i <img>
+
+let selectedPkmns = document.getElementsByClassName("selectPkmn"); // alla valda pokemon-sprites hamnar här i <img>
+
+let buttons = document.getElementsByClassName("info-btn"); // alla knappar för info
+let infos = document.getElementsByClassName("info");// info-texterna
+
+for(let i = 0; i < sprites.length; i++){
+
+    const sprite = sprites[i];
+
+    sprite.onclick = function(e){
+        selectedPkmns[i].src = sprite.src;
+    }
+    sprite.pokeIndex = i;
+}
+
+for(let i = 0; i < selectedPkmns.length; i++){
+    selectedPkmns[i].pokeIndex = i;
+}
+
+for(let i = 0; i < buttons.length; i++){
+
+    const button = buttons[i];
+
+    button.onclick = function(e){
+
+    }
+}
 
 // info-knappar
 let info1 = document.getElementById("info1");
@@ -33,7 +60,9 @@ let info4 = document.getElementById("info4");
 let info5 = document.getElementById("info5");
 let info6 = document.getElementById("info6");
 
-let outputBox1 = document.getElementById("textbox");
+
+
+
 
 
 
